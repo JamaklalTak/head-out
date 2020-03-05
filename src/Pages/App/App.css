@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.app-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 16%;
+}
+
+.app-subheader {
+  padding: 16px 0px;
+}
+
+.matches-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.matches-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.matches-list-container {
+  -ms-overflow-style: none;
+}
+
+.btn-grp-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-grp>button{
+  margin-left: 10px;
+}
+
+.btn-primary {
+  border: 1px solid #0c0c0c;
+  border-radius: 4px;
+  padding: .5rem;
+  width: 150px;
+}
+
+.btn-active {
+  background: linear-gradient(270deg,#d44030,#9b000d);
+}
+
+.btn-dropdown-container {
+  position: relative;
+}
+
+.dropdown-list {
+  margin-top: 4px;
+  position: absolute;
+  z-index: 9999;
+  background: #ffffff;
+  width: 150px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px gainsboro;
+}
+
+.dropdown-option {
+  padding: 2px 6px;
+  cursor: pointer;
+}
